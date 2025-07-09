@@ -1,0 +1,32 @@
+body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+    .gallery {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    
+    .gallery-link {
+      display: block;
+      text-decoration: none;
+    }
+    .gallery-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
